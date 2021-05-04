@@ -1,0 +1,94 @@
+body{
+    margin-bottom: 150px;
+    background-color: #FAF5E7;
+    font-size: 17px;
+}
+header{
+    border-bottom: 1px solid black;
+    padding: 1% 1.875%;
+}
+header img{
+    float: left;
+    width: 50px;
+    height: 70px;
+}
+                    /*NAVIGATION BAR*/
+#nav_menu ul li a.current{
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0 ;
+}
+#nav_menu ul li { 
+    float: left;
+    width: 25%;
+}
+#nav_menu ul li a{
+    color: #ECBD8B;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    background-color: black;
+    /*border-right: 2px solid black;*/
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li { float: none;}
+#nav_menu ul li a:hover{background-color: #9BA9A9;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+   content: "";
+   display: block;
+   clear: both;
+}                 
+                    /*SECTION*/
+
+h2{
+    margin-left: 40px;
+    padding: 30px;
+    border: solid 1px black;
+    width: 30%;
+    text-align: center;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: black;}
+#types, #recent, #recipients, #schlarships{
+    display: none;}
+p{
+    margin: 0 30px;
+    padding-right: 40px;
+}
+#schlarships p,#types p, #recent p, #recipients li{ 
+    margin-left: 10px;
+    padding-left: 30px;
+}
+#recipients{margin-bottom: 300px;}
+
+                  /*FOOTER*/
+footer{
+    border-top: 1px solid #FAF5E7;
+    background-color: #FAF5E7;
+    color: black;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    font-size: 85%;
+    margin-top:150px;
+}
+footer p{
+    margin: 5px 0;
+    text-align: center;
+}

@@ -1,0 +1,130 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #FAF5E7;
+    font-size: 17px;
+}
+header{
+    border-bottom: 1px solid black;
+    padding: 1% 1.875%;
+}
+header img{
+    float: left;
+    width: 50px;
+    height: 70px;
+}
+                    /*NAVIGATION BAR*/
+#nav_menu ul li a.current{
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0 ;
+}
+#nav_menu ul li { 
+    float: left;
+    width: 25%;
+}
+#nav_menu ul li a{
+    color: #ECBD8B;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    background-color: black;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li { float: none;}
+#nav_menu ul li a:hover{background-color: #9BA9A9;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+   content: "";
+   display: block;
+   clear: both;
+}                    /*SECTION*/
+/*TA FORM*/
+section {
+    padding: 10px 0:
+    border: 1px;
+    margin: 10px;
+    margin-left: 50px;
+}
+section form{
+    color: black;
+    box-shadow: 5px 10px #1b1f1d;
+    background-color: #9BA9A9 ;
+    border: 1px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    clear: right;
+    height: 400px;
+}
+label{
+    float: left;
+    width: 8em;
+}
+#choice{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    clear: left;
+}
+input{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    
+}
+#comments{
+    margin-left: 20px;
+    width: 18em;
+    height: 10em;
+    margin-bottom: 10px;
+}
+#button, #reset {
+    border-radius: 25px;
+    width: 7em;
+    box-shadow: 2px 2px 0; 
+}
+#button {
+    color: black;
+    margin-left: 12em;
+
+}
+aside{
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+    #firstname, #middlename, #lastname, #id, #gender, #gpa, #date, #comments, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}                  /*FOOTER*/
+footer{
+    border-top: 1px solid #FAF5E7;
+    background-color: #FAF5E7;
+    color: black;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width:100%;
+    height: 14%;
+    font-size: 85%;}
+footer p{
+    margin: 5px 0;
+    text-align: center;
+}

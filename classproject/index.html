@@ -1,0 +1,111 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="home.css">
+        <link rel="shortcut icon" href="cat.png">
+        <title>Thao Pham's Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#t1").click(function(){
+                    $("#a1").slideToggle("slow");
+                })
+            $("#t2").click(function(){
+                $("#a2").slideToggle("slow");
+                })
+            $("#t3").click(function(){
+                $("#a3").slideToggle("slow");
+                })
+            $("#t4").click(function(){
+                $("#a4").slideToggle("slow");
+                });
+            });
+        </script>
+        <!-- Essential JS 2 Calendar's dependent material theme>
+        <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
+
+        <!-- Essential JS 2 all script -->
+        <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
+
+        <!-- Essential JS 2 Calendar's dependent scripts >
+        <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+        <script src="https://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script-->
+        
+    </head>
+    <body>
+        <header>
+            <img src="cat.png" alt="cat">
+            <h1>Thao Pham's</h1>
+        </header>
+        
+        <!-- The horizontal navigation menu-->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="ta_app.html">Teaching Assistant Application</a></li>
+                <li><a href="GPA.html">GPA Calculator</a></li>
+                <li><a>Computer Science Program</a>
+                        <ul>
+                            <li><a href="cs_program.html">About</a></li>
+                            <li><a href="scholarship.html">Scholarships</a></li>
+                            <li><a href="club.html">Club</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section>
+            <div id="welcome">
+                <h3>Welcome to <strong>MY</strong> home page.</h3>
+                <p>This is the place where you can relax and have fun, so talking or thinking about studying or working are <strong>NOT ALLOWED</strong>.</p>
+                <p>Under here is a list of anime series and movies that you <strike>must</strike> should watch. <s>There are more but I'm too lazy to put them in.</s> 
+                </p>
+            </div>
+            
+            <div id="holidays">
+                <h3>Here are a list of upcoming holidays.</h3>
+                <ul>
+                    <li>Memorial Day - Mon, May 31, 2021</li>
+                    <li>Independence Day - Mon, Jul 5, 2021</li>
+                    <li>Labor Day - Mon, Sep 6, 2021</li>
+                    <li>Columbus Day - Mon, Oct 11, 2021</li><br>
+                </ul>
+            </div>            <!--CALENDAR-->
+            <!--div id="element"><h3>Calendar</h3></div>
+                <script>
+                // initialize the Calendar component
+                var calendar = new ej.calendars.Calendar();
+
+                // Render the initialized button.
+                calendar.appendTo('#element')
+            </script-->
+            <!--collapsing-->
+            <div id="col">
+                <h2 id="t1"><a href="#">Howl's Moving Caslte</a></h2>
+                <div id="a1"><img src="howl.JPG"></div>
+                <h2 id="t2"><a href="#">My Neighbor Totoro</a></h2>
+                <div id="a2"><img src="totoro.jpeg"></div>
+                <h2 id="t3"><a href="#">That Time I Got Reincarnated as a Slime</a></h2>
+                <div id="a3"><img src="slime.jpg"></div>
+                <h2 id="t4"><a href="#">Shadows House</a></h2>
+                <div id="a4"><img src="shadows.jpg"></div>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <p>&copy; 2021</p>
+            <p>Contact Information:</p>
+            <p>Thao Pham</p>
+            <p>ppham1@aum.edu</p>
+            <p>(334)-XXX-XXXX</p>
+        </footer>
+    </body>
+
+</html>

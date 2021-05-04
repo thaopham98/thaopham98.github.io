@@ -1,0 +1,88 @@
+body{
+    height: 100%;
+    margin-bottom: auto;
+    width: 100%;
+    background-color: #FAF5E7;
+}
+header{
+    border-bottom: 1px solid black;
+    padding: 1% 1.875%;
+}
+header img{
+    float: left;
+    width: 50px;
+    height: 70px;
+}
+
+/*NAVIGATION BAR*/
+#nav_menu ul li a.current{
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0 ;
+}
+#nav_menu ul li { 
+    float: left;
+    width: 25%;
+}
+#nav_menu ul li a{
+    color: #ECBD8B;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    background-color: black;
+    /*border-right: 2px solid black;*/
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li { float: none;}
+#nav_menu ul li a:hover{background-color: #9BA9A9;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+/*DESCRIPTION*/
+#description, #points, #puttowork, table{
+    margin: 20px 30px;
+}
+/*TABLE*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.colspan{text-align: center;}
+td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+/*POINTS OF PRIDE*/
+/*DEGREE TO WORK*/
+/FOOTER*/
+footer{
+    border-top: 1px solid #FAF5E7;
+    background-color: #FAF5E7;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    font-size: 85%;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+}
