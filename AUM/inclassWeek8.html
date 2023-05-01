@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+            // confirm()
+            /*var result = confirm("Are you sure you want to delete it?");
+            var entryA = prompt("Enter any value", 12345.6789);
+            entryA = parseInt(entryA);        // entryA = 12345
+            var entryB = prompt("Enter any value", 12345.6789);
+            entryB = parseFloat(entryB);      // entryB = 12345.6789
+            var sum = entryA + entryB;
+            alert(sum);*/
+            
+            var $ = function(id){
+                return document.getElementById(id);
+            }
+            var clickExp = function(){
+                alert($("number").value);
+            }
+        </script>
+        
+        <!--noscript>
+            function loaded(){
+                var pp1 = document.getElementById("p1").innerHTML = "First line";
+                var pp2 = document.getElementById("p2");
+                pp2.innerHTML = "Second line";
+            }
+        </noscript-->
+        
+    </head>
+    <body> <!--body onload="loaded()"-->
+        
+        <!--<p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>-->
+        
+        <!--script> 
+            //getElementById ; this script is in the body because the p loads after the page.
+            // if this script is in <head>, then creat the onload function in the body.
+            var pp1 = document.getElementById("p1").innerHTML = "First line";
+            var pp2 = document.getElementById("p2");
+            pp2.innerHTML = "Second line";
+            
+            // write() & writeln()
+            var pp3 = document.getElementById("p3");
+            document.writeln("Third line");
+            var pp4 = document.getElementById("p4");
+            document.write("Forth line");
+            
+        </script-->
+        
+        <input type="text" id="number">
+        <input type="button" onclick="clickExp()" value="Show">
+    </body>
+</html>
