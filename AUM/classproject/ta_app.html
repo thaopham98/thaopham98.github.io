@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ta_app.css">
+    <link rel="shortcut icon" href="cat.png">        
+    <title>Teaching Assistant Application</title>
+</head>
+    
+<body>
+    <header>
+        <img src="cat.png" alt="cat">
+        <h1>Thao Pham's</h1>
+    </header>
+
+    <!-- The horizontal navigation menu-->
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ta_app.html" class="current">Teaching Assistant Application</a></li>
+            <li><a href="GPA.html">GPA Calculator</a></li>
+            <li id="program"><a>Computer Science Program</a>
+                        <ul>
+                            <li><a href="cs_program.html">About</a></li>
+                            <li><a href="scholarship.html">Scholarships</a></li>
+                            <li><a href="club.html">Club</a></li>
+                    </ul>
+                </li>
+        </ul>
+    </nav>
+    <section>
+        <!--TA Application-->
+        <div id="form">
+            <h3>Please input your information!</h3>
+            <form name="form" action="ta_form.html" method="get">
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname" required><br>
+
+                <label for="middlename">Middle name:</label>
+                <input type="text" name="middlename" id="middlename" placeholder="Optional"><br>
+
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" id="lastname" required><br>
+
+                <label for="id">ID:</label>
+                <input type="number" name="id" id="id" placeholder="Eight Digits" required pattern="/d{8}"><br>
+                
+                <label>Gender:</label>
+                    <!--label for="female">Female</label>
+                    <input type="checkbox" name="female" id="female"><br>
+
+                    <label for="male">Male</label>
+                    <input type="checkbox" name="male" id="male"><br>
+
+                    <label for="non">Prefer not to say</label>
+                    <input type="checkbox" name="non" id="non"><br>
+
+                    <label for="typein" placeholder="other">Other gender:</label><br>
+                    <input type="text" name="typein" id="typein"-->
+                <select id="choice" name="choice">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="non">Prefer not to say</option>
+                        <!--input type="text" id="typein" value="Other genders"><br-->
+                </select><br>
+                <label for="gpa">GPA:</label>
+                <input type="number" name="gpa" min="0" max="4" value="0" step="0.01" id="gpa" required><br>
+
+                <label for="date">Submission Date:</label>
+                <input type="date" name="date" id="date" required><br>
+
+                <label for="comments">Comments:</label>
+                <textarea rows="1" cols="50" wrap="physical" name="comments" id="comments" placeholder="Optional"></textarea><br>
+
+                <input type="submit" name="button" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+
+            </form>
+        </div>
+                <!--GIF-->
+        <aside id="gif">
+            <iframe src="https://giphy.com/embed/b07clVdSOQcSY" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/studio-ghibli-spirited-away-b07clVdSOQcSY">via GIPHY</a></p>
+        </aside>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2021 <br>
+        Contact Information:<br>
+        Thao Pham<br>
+        ppham1@aum.edu<br>
+        (334)-XXX-XXXX</p>
+    </footer>
+</body>
+
+</html>

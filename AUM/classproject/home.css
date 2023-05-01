@@ -1,0 +1,113 @@
+body{
+    width: 100%;
+    background-color: #FAF5E7;
+    height: 250px;
+    margin-bottom: 250px;
+}
+header{
+    border-bottom: 1px solid black;
+    padding: 1% 1.875%;
+}
+header img{
+    float: left;
+    width: 50px;
+    height: 70px;
+}
+
+                    /*NAVIGATION BAR*/
+#nav_menu ul li a.current{
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0 ;
+}
+#nav_menu ul li { 
+    float: left;
+    width: 25%;
+}
+#nav_menu ul li a{
+    color: #ECBD8B;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 1em 0;
+    background-color: black;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+#nav_menu ul ul li { float: none;}
+#nav_menu ul li a:hover{background-color: #9BA9A9;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+             /*SECTION*/
+#welcome{
+    margin: 20px;
+    padding: 20px;
+    float: left;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#col{
+    clear: both;
+    float: center;
+}
+h2{
+    padding: 10px;
+    text-align: center;
+    border: solid 1px black;
+    margin-right: 70px;
+    margin-left: 70px;
+    float: center;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: black;}
+#a1, #a2, #a3, #a4{
+    clear: both;
+    display: none;
+    float: center;
+}
+#a4 {margin-bottom: 140px;}
+
+#holidays{
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 25%;    
+}
+         
+#element h3{text-align: center;}
+             /*FOOTER*/
+footer{
+    color: black;
+    position: static;
+    bottom:0;
+    width:100%;
+    font-size: 85%;
+    margin-top:100px;
+}
+footer p{
+    margin: 5px 0;
+    text-align: center;
+}

@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="gpa.css">
+        <link rel="shortcut icon" href="cat.png">
+        <script src="GPA.js"></script>
+        <title>GPA Calculator</title>
+    </head>
+    <body>
+        <header>
+            <img src="cat.png" alt="cat">
+            <h1>Thao Pham's</h1>
+        </header>
+        
+        <!-- The horizontal navigation menu-->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ta_app.html">Teaching Assistant Application</a></li>
+                <li><a href="GPA.html" class="current">GPA Calculator</a></li>
+                <li><a>Computer Science Program</a>
+                        <ul>
+                            <li><a href="cs_program.html">About</a></li>
+                            <li><a href="scholarship.html">Scholarships</a></li>
+                            <li><a href="club.html">Club</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section>
+            <form>
+                <h2>GPA Calculator</h2>
+                <h3>Please enter your grades</h3>
+                <label for="lettergrade1">Letter Grade 1:</label>
+                <input type="text" id="letter1" required><br>
+
+                <label for="credithour1">Credit Hour 1:</label>
+                <input type="number" id="credit1" step="0.01" required><br>
+
+                <label for="lettergrade2">Letter Grade 2:</label>
+                <input type="text" id="letter2" required><br>
+
+                <label for="credithour2">Credit Hour 2:</label>
+                <input type="number" id="credit2" step="0.01" required><br>
+                
+                
+                <!--label for="lettergrade3">Letter Grade 3:</label>
+                <input type="text" id="letter3" ><br>
+
+                <label for="credithour3">Credit Hour 3:</label>
+                <input type="number" id="credit3" step="0.01" ><br>
+
+                <label for="lettergrade4">Letter Grade 4:</label>
+                <input type="text" id="letter4" ><br>
+
+                <label for="credithour4">Credit Hour 4:</label>
+                <input type="number" id="credit4" step="0.01" ><br-->
+                
+                
+                <div id="button">
+                    <input type="button" id="calculatebutton" value="Calculate">
+                    <input type="reset" value="Reset">
+
+                    <!--div id="results"></div>
+                    <table id="score"></table-->
+                </div>
+            </form>
+            <aside id="formula">
+                <h2>GPA Formula</h2>
+                <img src="formula.png">
+            </aside>
+        </section>
+        
+        <footer>
+            <p>&copy; 2021<br>
+            Contact Information:<br>
+            Thao Pham<br>
+            ppham1@aum.edu<br>
+            (334)-XXX-XXXX</p>
+        </footer>
+    </body>
+</html>
